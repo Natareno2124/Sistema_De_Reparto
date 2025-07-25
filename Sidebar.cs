@@ -17,7 +17,6 @@ namespace WinFormsApp1
             InitializeComponent();
             CrearMenuLateral();
         }
-
         private void CrearMenuLateral()
         {
             this.BackColor = ColorTranslator.FromHtml("#183446"); //fondo color
@@ -62,16 +61,15 @@ namespace WinFormsApp1
             // Botones del menú
             string[] nombresBotones =
             {
-                "Usuarios", "Rutas", "Paquetes", "Bodegas", "Reportes", "Transportes", "Repartidores", 
+                "Usuarios", "Rutas", "Paquetes", "Bodegas", "Reportes", "Transportes", "Repartidores",
                 "Pilotos", "Sucursales"
             };
 
-            string[] rutasIconos = 
+            string[] rutasIconos =
              {
                 "usuario.png", "ruta.png", "paquete.png", "bodega.png", "reporte.png", "transporte.png", "repartidor.png",
                 "piloto.png", "sucursal.png"
             };
-
 
             for (int i = 0; i < nombresBotones.Length; i++)
             {
@@ -106,11 +104,52 @@ namespace WinFormsApp1
                     MessageBox.Show("Ruta buscada: " + rutaIcono);
                 }
 
+                string nombreBoton = nombresBotones[i];
+                btn.Click += (s, e) => AbrirVentana(nombreBoton);
 
-                btn.Click += (s, e) => MessageBox.Show("Abrir " + nombresBotones[i]);
+                contenedorBotones.Controls.Add(btn);
+
                 contenedorBotones.Controls.Add(btn);
             }
         }
-    }
 
+        private void AbrirVentana(string nombre){
+            Form ventana = null;
+            switch (nombre){
+                case "Usuarios":
+                    ventana = new Pilotos(); 
+                    break;
+                case "Rutas":
+                    ventana = new Pilotos();  
+                    break;
+                case "Paquetes":
+                    ventana = new Pilotos(); 
+                    break;
+                case "Bodegas":
+                    ventana = new Pilotos();  
+                    break;
+                case "Reportes":
+                    ventana = new Pilotos();   
+                    break;
+                case "Transportes":
+                    ventana = new Pilotos();  
+                    break;
+                case "Repartidores":
+                    ventana = new Pilotos(); 
+                    break;
+                case "Pilotos":
+                    ventana = new Pilotos();    
+                    break;
+                case "Sucursales":
+                    ventana = new Pilotos();   
+                    break;
+                default:
+                    MessageBox.Show("ERROR, CONTACTE A SERVICIO TECNICO");
+                    break;
+            }
+            if (ventana != null){
+                ventana.Show();
+            }
+        }
+    }
 }
