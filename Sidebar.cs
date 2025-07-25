@@ -98,7 +98,7 @@ namespace WinFormsApp1
 
                     btn.ImageAlign = ContentAlignment.MiddleLeft;
                     btn.TextAlign = ContentAlignment.MiddleRight;
-                    btn.Padding = new Padding(15, 0, 0, 0);
+                    btn.Padding = new Padding(10, 0, 0, 0);
                     btn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 }
                 else
