@@ -53,3 +53,41 @@ C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\siste
 C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
 C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
 C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\obj\Debug\net8.0-windows\WinFormsApp1.Sidebar.resources
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\WinFormsApp1.exe
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\WinFormsApp1.dll
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\SistemaReparto\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
+C:\SistemaReparto\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.Form2.resources
+C:\SistemaReparto\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.Properties.Resources.resources
+C:\SistemaReparto\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.Sidebar.resources
+C:\SistemaReparto\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\SistemaReparto\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\SistemaReparto\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\SistemaReparto\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\SistemaReparto\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\SistemaReparto\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
+C:\SistemaReparto\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.dll
+C:\SistemaReparto\Sistema_De_Reparto\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
+C:\SistemaReparto\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\SistemaReparto\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\SistemaReparto\Sistema_De_Reparto\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\SistemaReparto\Sistema_De_Reparto\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\SistemaReparto\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
+C:\SistemaReparto\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinForms.E4050A35.Up2Date

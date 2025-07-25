@@ -15,6 +15,14 @@ namespace WinFormsApp1
         public Form2()
         {
             InitializeComponent();
+            Sidebar menu = new Sidebar();
+            this.Controls.Add(menu);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Clases.CConexion conexion = new Clases.CConexion();
+            conexion.establecerConexion();
         }
     }
 }
