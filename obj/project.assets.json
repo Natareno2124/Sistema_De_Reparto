@@ -8,19 +8,24 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\kevin\\.nuget\\packages\\": {}
+    "C:\\Users\\dannus\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SistemaReparto\\WinFormsApp1.csproj",
+      "projectUniqueName": "C:\\Users\\dannus\\Desktop\\UMG\\Ing. Sistemas\\Analisis de Sistemas II\\Proyecto\\sistema\\WinFormsApp1.csproj",
       "projectName": "WinFormsApp1",
-      "projectPath": "C:\\SistemaReparto\\WinFormsApp1.csproj",
-      "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-      "outputPath": "C:\\SistemaReparto\\obj\\",
+      "projectPath": "C:\\Users\\dannus\\Desktop\\UMG\\Ing. Sistemas\\Analisis de Sistemas II\\Proyecto\\sistema\\WinFormsApp1.csproj",
+      "packagesPath": "C:\\Users\\dannus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dannus\\Desktop\\UMG\\Ing. Sistemas\\Analisis de Sistemas II\\Proyecto\\sistema\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dannus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,6 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

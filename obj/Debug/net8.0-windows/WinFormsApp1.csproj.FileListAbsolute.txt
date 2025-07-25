@@ -33,3 +33,23 @@ C:\SistemaReparto\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
 C:\SistemaReparto\obj\Debug\net8.0-windows\WinFormsApp1.pdb
 C:\SistemaReparto\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
 C:\SistemaReparto\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
+C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\bin\Debug\net8.0-windows\WinFormsApp1.exe
+C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
+C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\bin\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\bin\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
+C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\obj\Debug\net8.0-windows\WinFormsApp1.Form2.resources
+C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\obj\Debug\net8.0-windows\WinFormsApp1.Properties.Resources.resources
+C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
+C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\obj\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
+C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\obj\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
+C:\Users\dannus\Desktop\UMG\Ing. Sistemas\Analisis de Sistemas II\Proyecto\sistema\obj\Debug\net8.0-windows\WinFormsApp1.Sidebar.resources

@@ -12,6 +12,9 @@ namespace WinFormsApp1
             button1.BackColor = ColorTranslator.FromHtml("#8D99AE");
             BackColor = ColorTranslator.FromHtml("#2C546D");
 
+            // esto es lo que agrega el side bar a la ventana 
+            Sidebar menu = new Sidebar();
+            this.Controls.Add(menu);
         }
         private void AplicarColorATextBox(Control parent)
         {
