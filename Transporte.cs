@@ -6,6 +6,10 @@ namespace WinFormsApp1
 {
     public class Transporte : BaseForm
     {
+        private Button btnAgregar;
+        private Button btnEditar;
+        private Button btnGuardar;
+        private Button btnEliminar;
         public Transporte()
         { 
             this.Text = "TRANSPORTE";
@@ -114,6 +118,74 @@ namespace WinFormsApp1
             ContentPanel.Controls.Add(panelFiltros);
             ContentPanel.Controls.Add(dgvPilotos);
 
+            btnAgregar = new Button()
+            {
+                Size = new Size(100, 40),
+                Image = Image.FromFile("img/agregar.png"),
+                TextImageRelation = TextImageRelation.ImageBeforeText,
+                FlatStyle = FlatStyle.Flat
+            };
+            btnAgregar.FlatAppearance.BorderSize = 0;
+
+
+            btnEditar = new Button()
+            {
+                Size = new Size(100, 40),
+                Image = Image.FromFile("img/editar.png"),
+                TextImageRelation = TextImageRelation.ImageBeforeText,
+                FlatStyle = FlatStyle.Flat
+            };
+            btnEditar.FlatAppearance.BorderSize = 0;
+
+            btnGuardar = new Button()
+            {
+                Size = new Size(100, 40),
+                Image = Image.FromFile("img/guardar.png"),
+                TextImageRelation = TextImageRelation.ImageBeforeText,
+                FlatStyle = FlatStyle.Flat
+            };
+            btnGuardar.FlatAppearance.BorderSize = 0;
+
+            btnEliminar = new Button()
+            {
+                Size = new Size(100, 40),
+                Image = Image.FromFile("img/eliminar.png"),
+                TextImageRelation = TextImageRelation.ImageBeforeText,
+                FlatStyle = FlatStyle.Flat
+            };
+            btnEliminar.FlatAppearance.BorderSize = 0;
+
+
+            // Agregar los botones al ContentPanel
+            ContentPanel.Controls.Add(btnAgregar);
+            ContentPanel.Controls.Add(btnEditar);
+            ContentPanel.Controls.Add(btnGuardar);
+            ContentPanel.Controls.Add(btnEliminar);
+
+            // Posicionar botones en el Load o Constructor (también en Resize)
+            this.Load += (s, e) => PosicionarBotones();
+            this.Resize += (s, e) => PosicionarBotones();
         }
+
+        private void PosicionarBotones()
+        {
+            int padding = 15;
+            int x = ContentPanel.Width - padding;
+            int y = ContentPanel.Height - 40 - padding;
+
+            x -= btnEliminar.Width;
+            btnEliminar.Location = new Point(x, y);
+
+            x -= (btnGuardar.Width + padding);
+            btnGuardar.Location = new Point(x, y);
+
+            x -= (btnEditar.Width + padding);
+            btnEditar.Location = new Point(x, y);
+
+            x -= (btnAgregar.Width + padding);
+            btnAgregar.Location = new Point(x, y);
+        }
+
+
     }
 }
