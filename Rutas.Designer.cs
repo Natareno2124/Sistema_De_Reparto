@@ -33,6 +33,7 @@
             button1 = new Button();
             button3 = new Button();
             button4 = new Button();
+            sidebar1 = new Sidebar();
             SuspendLayout();
             // 
             // label1
@@ -83,11 +84,22 @@
             button4.Text = "ELIMINAR";
             button4.UseVisualStyleBackColor = true;
             // 
+            // sidebar1
+            // 
+            sidebar1.BackColor = Color.FromArgb(24, 52, 70);
+            sidebar1.Dock = DockStyle.Left;
+            sidebar1.Location = new Point(0, 0);
+            sidebar1.Name = "sidebar1";
+            sidebar1.Size = new Size(250, 551);
+            sidebar1.TabIndex = 6;
+            // 
             // Rutas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(141, 153, 174);
             ClientSize = new Size(1116, 551);
+            Controls.Add(sidebar1);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button1);
@@ -106,5 +118,6 @@
         private Button button1;
         private Button button3;
         private Button button4;
+        private Sidebar sidebar1;
     }
 }
