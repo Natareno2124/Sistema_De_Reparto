@@ -129,3 +129,6 @@ C:\PROY AS P2\Sistema_De_Reparto\obj\Debug\net8.0-windows\refint\WinFormsApp1.dl
 C:\PROY AS P2\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.pdb
 C:\PROY AS P2\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
 C:\PROY AS P2\Sistema_De_Reparto\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
+C:\PROY AS P2\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.BaseForm.resources
+C:\PROY AS P2\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.Pilotos.resources
+C:\PROY AS P2\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.Sucursales.resources
