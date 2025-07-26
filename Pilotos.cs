@@ -169,6 +169,7 @@ namespace WinFormsApp1
                 ForeColor = Color.Black,  // color del texto
                 Font = new Font("Segoe UI", 10)
             };
+
             ContentPanel.Controls.Add(cmbOrdenar);
             this.Load += (s, e) => RedondearControl(cmbOrdenar, 15);
             this.Load += (s, e) => CentrarControles(panelFiltros);
@@ -213,36 +214,42 @@ namespace WinFormsApp1
             ContentPanel.Controls.Add(dgvPilotos);
 
 
-
-
             // LOS BOTONES DE ACCION
-            btnAgregar = new Button(){
-                Size = new Size(100, 40),
+            btnAgregar = new Button() {
+                Size = new Size(150, 40),//width height
                 Image = Image.FromFile("img/agregar.png"),
+                Text = "Agregar",
+                ForeColor = Color.White,
                 TextImageRelation = TextImageRelation.ImageBeforeText,
                 FlatStyle = FlatStyle.Flat
             };
             btnAgregar.FlatAppearance.BorderSize = 0;
 
             btnEditar = new Button(){
-                Size = new Size(100, 40),
+                Size = new Size(150, 40),
                 Image = Image.FromFile("img/editar.png"),
+                Text = "Editar",
+                ForeColor = Color.White, 
                 TextImageRelation = TextImageRelation.ImageBeforeText,
                 FlatStyle = FlatStyle.Flat
             };
             btnEditar.FlatAppearance.BorderSize = 0;
 
-            btnGuardar = new Button() {
-                Size = new Size(100, 40),
+            btnGuardar = new Button()  {
+                Size = new Size(150, 40),
                 Image = Image.FromFile("img/guardar.png"),
+                Text = "Guardar",
+                ForeColor = Color.White,
                 TextImageRelation = TextImageRelation.ImageBeforeText,
                 FlatStyle = FlatStyle.Flat
             };
             btnGuardar.FlatAppearance.BorderSize = 0;
 
-            btnEliminar = new Button() {
-                Size = new Size(100, 40),
+            btnEliminar = new Button(){
+                Size = new Size(150, 40),
                 Image = Image.FromFile("img/eliminar.png"),
+                Text = "Eliminar",
+                ForeColor = Color.White,
                 TextImageRelation = TextImageRelation.ImageBeforeText,
                 FlatStyle = FlatStyle.Flat
             };
