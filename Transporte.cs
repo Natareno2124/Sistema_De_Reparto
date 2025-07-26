@@ -5,7 +5,8 @@ using System.Windows.Forms;
 
 namespace WinFormsApp1
 {
-    public class Pilotos : BaseForm {
+    public class Transporte : BaseForm
+    {
         private Button btnAgregar;
         private Button btnEditar;
         private Button btnGuardar;
@@ -18,9 +19,10 @@ namespace WinFormsApp1
         private Panel panelFiltros;
 
 
-        public Pilotos() {
+        public Transporte()
+        {
 
-            this.Text = "PILOTOS";
+            this.Text = "TRANSPORTE";
             this.Size = new Size(1000, 600);
 
 
@@ -31,14 +33,16 @@ namespace WinFormsApp1
             int espacioEntreControles = 30; // más separación
 
             // Panel superior
-            Panel headerPanel = new Panel {
+            Panel headerPanel = new Panel
+            {
                 Size = new Size(this.Width, 50),
                 Dock = DockStyle.Top,
                 BackColor = ColorTranslator.FromHtml("#8A97A8") // Color gris-azulado
             };
 
             // Botón hamburguesa
-            Button btnMenu = new Button {
+            Button btnMenu = new Button
+            {
                 Size = new Size(40, 40),
                 Location = new Point(10, 5),
                 FlatStyle = FlatStyle.Flat,
@@ -49,7 +53,8 @@ namespace WinFormsApp1
             btnMenu.FlatAppearance.BorderSize = 0;
 
             // Usuario con icono
-            Label lblUsuario = new Label {
+            Label lblUsuario = new Label
+            {
                 Text = "User Administrador ▼",
                 Font = new Font("Segoe UI", 10, FontStyle.Regular),
                 ForeColor = Color.White,
@@ -58,12 +63,13 @@ namespace WinFormsApp1
             };
 
             // Ajustar cuando cambie tamaño
-            headerPanel.Resize += (s, e) =>  {
+            headerPanel.Resize += (s, e) => {
                 lblUsuario.Location = new Point(headerPanel.Width - 180, 15);
             };
 
             //hr
-            Panel linea = new Panel{
+            Panel linea = new Panel
+            {
                 Height = 2,
                 Dock = DockStyle.Bottom,
                 BackColor = ColorTranslator.FromHtml("#2C546D") // línea oscura
@@ -76,8 +82,9 @@ namespace WinFormsApp1
             ContentPanel.Controls.Add(headerPanel);
 
             // Título debajo del header
-            Label lblTitulo = new Label {
-                Text = "PILOTOS",
+            Label lblTitulo = new Label
+            {
+                Text = "TRANSPORTE",
                 Font = new Font("Segoe UI", 14, FontStyle.Bold),
                 ForeColor = ColorTranslator.FromHtml("#1F2A44"),
                 AutoSize = true,
@@ -93,7 +100,8 @@ namespace WinFormsApp1
             //ESSTO ES EL CONTENIDO DE LA PAGINA DE PILOTOVAS 
 
             //Panel de filtros
-            Panel panelFiltros = new Panel {
+            Panel panelFiltros = new Panel
+            {
                 Size = new Size(750, 50),
                 Location = new Point(margenIzquierda, 60),
                 BackColor = Color.White
@@ -103,9 +111,10 @@ namespace WinFormsApp1
             this.Load += (s, e) => RedondearControl(panelFiltros, 15);
 
             // Campo de búsqueda
-            txtBuscar = new TextBox {
-                PlaceholderText = "Buscar por nombre",
-                Size = new Size(200,30),
+            txtBuscar = new TextBox
+            {
+                PlaceholderText = "Buscar por placa",
+                Size = new Size(200, 30),
                 Multiline = true, /// fuerza que sea mas alto
                 Location = new Point(10, 10),
                 BackColor = ColorTranslator.FromHtml("#76A2BE"),
@@ -135,23 +144,25 @@ namespace WinFormsApp1
             this.Load += (s, e) => CentrarControles(panelFiltros);
             this.Resize += (s, e) => CentrarControles(panelFiltros);
 
-            cmbRutas.Items.AddRange(new string[] {"Seleccionar Ruta", "Todas las rutas", "Recolección", "Entrega" });
+            cmbRutas.Items.AddRange(new string[] { "Seleccionar Sucursal", "Norte", "Sur", "EsteOeste" });
             cmbRutas.SelectedIndex = 0;
 
             Image[] iconos = new Image[]{
                 Image.FromFile("img/filtrar.png"),
             };
-            cmbRutas.DrawItem += (s, e) =>{
+            cmbRutas.DrawItem += (s, e) => {
                 e.DrawBackground();
 
-                if (e.Index >= 0) {
+                if (e.Index >= 0)
+                {
                     int margenDerecho = 10;
                     int anchoTextoMax = e.Bounds.Width - margenDerecho;
 
                     string texto = cmbRutas.Items[e.Index].ToString();
                     SizeF textoSize = e.Graphics.MeasureString(texto, e.Font);
 
-                    using (Brush textoBrush = new SolidBrush(e.ForeColor)){
+                    using (Brush textoBrush = new SolidBrush(e.ForeColor))
+                    {
                         e.Graphics.DrawString(texto, e.Font, textoBrush, e.Bounds.Left + 5, e.Bounds.Top + 4);
                     }
                 }
@@ -160,7 +171,8 @@ namespace WinFormsApp1
 
 
             // Botón ordenar
-            cmbOrdenar = new ComboBox{
+            cmbOrdenar = new ComboBox
+            {
                 Size = new Size(180, 30),
                 Location = new Point(420, 10), // posición
                 DropDownStyle = ComboBoxStyle.DropDownList, // Solo seleccionar opciones
@@ -175,7 +187,7 @@ namespace WinFormsApp1
             this.Load += (s, e) => CentrarControles(panelFiltros);
             this.Resize += (s, e) => CentrarControles(panelFiltros);
 
-            cmbOrdenar.Items.AddRange(new string[] {"Ordenar por: ID", "Ordenar por: Nombre",  "Ordenar por: Fecha", "Ordenar por: Ruta" });
+            cmbOrdenar.Items.AddRange(new string[] { "Ordenar por: ID", "Ordenar por: Nombre", "Ordenar por: Placa", "Ordenar por: Estado" });
             cmbOrdenar.SelectedIndex = 0;
             cmbOrdenar.SelectedIndexChanged += (s, e) => {
                 string opcion = cmbOrdenar.SelectedItem.ToString();
@@ -186,7 +198,8 @@ namespace WinFormsApp1
             panelFiltros.Controls.AddRange(new Control[] { txtBuscar, cmbRutas, cmbOrdenar });
 
             // Tabla de pilotos
-            DataGridView dgvPilotos = new DataGridView{
+            DataGridView dgvPilotos = new DataGridView
+            {
                 Size = new Size(750, 450),
                 BackgroundColor = ColorTranslator.FromHtml("#2C546D"),
                 RowHeadersVisible = false,
@@ -201,21 +214,27 @@ namespace WinFormsApp1
 
 
             // Columnas
-            string[] columnas = { "ID", "Nombre", "Fecha_Nac", "Ruta", "Sucursal", "NºEntregas", "Contacto" };
-            foreach (string col in columnas){
+            string[] columnas = { "Placa", "Marca", "Modelo", "Color", "Sucursal", "Estado" };
+
+            foreach (string col in columnas)
+            {
                 dgvPilotos.Columns.Add(col, col);
             }
 
             // Datos ejemplo
-            dgvPilotos.Rows.Add("001", "Juan Pérez", "15/03/1985", "Ruta Norte", "Central", "45", "555-1234");
-            dgvPilotos.Rows.Add("002", "Ana Gómez", "22/07/1990", "Ruta Sur", "Norte", "32", "555-5678");
+
+            dgvPilotos.Rows.Add("GHH1563", "Toyota", "Yaris", "Negro", "Central", "Disponible");
+            dgvPilotos.Rows.Add("BGS4524", "Kia", "Picanto", "Rojo", "Norte", "Ocupado");
+
+
 
             ContentPanel.Controls.Add(panelFiltros);
             ContentPanel.Controls.Add(dgvPilotos);
 
 
             // LOS BOTONES DE ACCION
-            btnAgregar = new Button() {
+            btnAgregar = new Button()
+            {
                 Size = new Size(150, 40),//width height
                 Image = Image.FromFile("img/agregar.png"),
                 Text = "Agregar",
@@ -225,17 +244,19 @@ namespace WinFormsApp1
             };
             btnAgregar.FlatAppearance.BorderSize = 0;
 
-            btnEditar = new Button(){
+            btnEditar = new Button()
+            {
                 Size = new Size(150, 40),
                 Image = Image.FromFile("img/editar.png"),
                 Text = "Editar",
-                ForeColor = Color.White, 
+                ForeColor = Color.White,
                 TextImageRelation = TextImageRelation.ImageBeforeText,
                 FlatStyle = FlatStyle.Flat
             };
             btnEditar.FlatAppearance.BorderSize = 0;
 
-            btnGuardar = new Button()  {
+            btnGuardar = new Button()
+            {
                 Size = new Size(150, 40),
                 Image = Image.FromFile("img/guardar.png"),
                 Text = "Guardar",
@@ -245,7 +266,8 @@ namespace WinFormsApp1
             };
             btnGuardar.FlatAppearance.BorderSize = 0;
 
-            btnEliminar = new Button(){
+            btnEliminar = new Button()
+            {
                 Size = new Size(150, 40),
                 Image = Image.FromFile("img/eliminar.png"),
                 Text = "Eliminar",
@@ -270,7 +292,7 @@ namespace WinFormsApp1
         // redondeador
         /// - Referencia: https://stackoverflow.com/questions/1262344/how-do-i-make-a-panel-with-rounded-corners
         /// - Documentación oficial Region: https://learn.microsoft.com/en-us/dotnet/api/system.drawing.region
-        public void RedondearControl(Control control, int radio) {
+        public void RedondearControl(Control control, int radio){
             GraphicsPath path = new GraphicsPath();
             path.StartFigure();
             path.AddArc(new Rectangle(0, 0, radio, radio), 180, 90);
@@ -281,14 +303,13 @@ namespace WinFormsApp1
             control.Region = new Region(path);
         }
 
-
-        private void CentrarControles(Panel panel){
+        private void CentrarControles(Panel panel) {
             Control[] controles = { txtBuscar, cmbRutas, cmbOrdenar };
             int espacio = 20;
             int anchoTotal = controles.Sum(c => c.Width) + espacio * (controles.Length - 1);
             int inicioX = (panel.Width - anchoTotal) / 2;
             int y = (panel.Height - txtBuscar.Height) / 2;
-            for (int i = 0; i < controles.Length; i++){
+            for (int i = 0; i < controles.Length; i++) {
                 controles[i].Location = new Point(inicioX, y);
                 inicioX += controles[i].Width + espacio;
             }

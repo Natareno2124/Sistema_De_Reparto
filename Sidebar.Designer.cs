@@ -35,7 +35,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Name = "Sidebar";
-            Size = new Size(356, 474);
+            Size = new Size(393, 474);
             ResumeLayout(false);
         }
 
