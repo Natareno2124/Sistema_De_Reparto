@@ -129,7 +129,7 @@ namespace WinFormsApp1
             this.Resize += (s, e) => CentrarControles(panelFiltros);
 
 
-            // el select de busqueda de tipo de rusas 
+            // el select de busqueda de tipo de rutas 
             cmbRutas = new ComboBox {
                 Size = new Size(180, 30),
                 Location = new Point(220, 10),

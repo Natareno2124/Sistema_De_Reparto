@@ -34,7 +34,6 @@
             button1 = new Button();
             button3 = new Button();
             button4 = new Button();
-            sidebar1 = new Sidebar();
             pictureBox1 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
@@ -45,6 +44,14 @@
             label2 = new Label();
             label3 = new Label();
             panel1 = new Panel();
+            button5 = new Button();
+            panel3 = new Panel();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            panel2 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -53,6 +60,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel1.SuspendLayout();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -60,9 +68,8 @@
             label1.AutoSize = true;
             label1.Location = new Point(189, 24);
             label1.Name = "label1";
-            label1.Size = new Size(53, 20);
+            label1.Size = new Size(0, 20);
             label1.TabIndex = 1;
-            label1.Text = "RUTAS";
             label1.Click += label1_Click;
             // 
             // button2
@@ -107,19 +114,10 @@
             button4.Text = "ELIMINAR";
             button4.UseVisualStyleBackColor = true;
             // 
-            // sidebar1
-            // 
-            sidebar1.BackColor = Color.FromArgb(24, 52, 70);
-            sidebar1.Dock = DockStyle.Left;
-            sidebar1.Location = new Point(0, 0);
-            sidebar1.Name = "sidebar1";
-            sidebar1.Size = new Size(250, 656);
-            sidebar1.TabIndex = 6;
-            // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.menu;
-            pictureBox1.Location = new Point(256, 12);
+            pictureBox1.Location = new Point(206, 9);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(52, 55);
             pictureBox1.TabIndex = 7;
@@ -174,7 +172,7 @@
             // pictureBox6
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(796, -4);
+            pictureBox6.Location = new Point(792, -4);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(75, 71);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -185,7 +183,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
+            label2.ForeColor = Color.FromArgb(24, 52, 70);
             label2.Location = new Point(22, 19);
             label2.Name = "label2";
             label2.Size = new Size(105, 38);
@@ -205,12 +203,102 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(24, 52, 70);
+            panel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            panel1.BackColor = Color.FromArgb(238, 238, 238);
+            panel1.Controls.Add(button5);
+            panel1.Controls.Add(panel3);
+            panel1.Controls.Add(panel2);
             panel1.Controls.Add(label2);
-            panel1.Location = new Point(256, 73);
+            panel1.Location = new Point(206, 73);
             panel1.Name = "panel1";
-            panel1.Size = new Size(875, 489);
+            panel1.Size = new Size(931, 489);
             panel1.TabIndex = 19;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(20, 448);
+            button5.Name = "button5";
+            button5.Size = new Size(94, 29);
+            button5.TabIndex = 19;
+            button5.Text = "Ordenar";
+            button5.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(label8);
+            panel3.Controls.Add(label7);
+            panel3.Controls.Add(label6);
+            panel3.Controls.Add(label5);
+            panel3.Controls.Add(label4);
+            panel3.Location = new Point(22, 85);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(830, 39);
+            panel3.TabIndex = 18;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
+            label8.ForeColor = Color.FromArgb(24, 52, 70);
+            label8.Location = new Point(542, 10);
+            label8.Name = "label8";
+            label8.Size = new Size(63, 25);
+            label8.TabIndex = 4;
+            label8.Text = "Zonas";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
+            label7.ForeColor = Color.FromArgb(24, 52, 70);
+            label7.Location = new Point(188, 10);
+            label7.Name = "label7";
+            label7.Size = new Size(106, 25);
+            label7.TabIndex = 3;
+            label7.Text = "Hora Inicio";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
+            label6.ForeColor = Color.FromArgb(24, 52, 70);
+            label6.Location = new Point(367, 10);
+            label6.Name = "label6";
+            label6.Size = new Size(99, 25);
+            label6.TabIndex = 2;
+            label6.Text = "Hora Final";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
+            label5.ForeColor = Color.FromArgb(24, 52, 70);
+            label5.Location = new Point(743, 11);
+            label5.Name = "label5";
+            label5.Size = new Size(70, 25);
+            label5.TabIndex = 1;
+            label5.Text = "Pilotos";
+            label5.Click += label5_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
+            label4.ForeColor = Color.FromArgb(24, 52, 70);
+            label4.Location = new Point(20, 10);
+            label4.Name = "label4";
+            label4.Size = new Size(87, 25);
+            label4.TabIndex = 0;
+            label4.Text = "No. Ruta";
+            label4.Click += label4_Click;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(24, 52, 70);
+            panel2.Location = new Point(20, 59);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(853, 9);
+            panel2.TabIndex = 17;
             // 
             // Rutas
             // 
@@ -222,12 +310,11 @@
             Controls.Add(label3);
             Controls.Add(pictureBox6);
             Controls.Add(pictureBox7);
+            Controls.Add(pictureBox1);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox3);
-            Controls.Add(pictureBox1);
-            Controls.Add(sidebar1);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button1);
@@ -245,6 +332,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -255,7 +344,6 @@
         private Button button1;
         private Button button3;
         private Button button4;
-        private Sidebar sidebar1;
         private PictureBox pictureBox1;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
@@ -266,5 +354,13 @@
         private Label label2;
         private Label label3;
         private Panel panel1;
+        private Panel panel2;
+        private Panel panel3;
+        private Label label8;
+        private Label label7;
+        private Label label6;
+        private Label label5;
+        private Label label4;
+        private Button button5;
     }
 }

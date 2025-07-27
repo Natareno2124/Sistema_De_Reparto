@@ -120,7 +120,7 @@ namespace WinFormsApp1
                     ventana = new Pilotos(); 
                     break;
                 case "Rutas":
-                    ventana = new Pilotos();  
+                    ventana = new Rutas();  
                     break;
                 case "Paquetes":
                     ventana = new Pilotos(); 
