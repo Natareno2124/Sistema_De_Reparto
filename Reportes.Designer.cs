@@ -31,18 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reportes));
             panel1 = new Panel();
             dataGridView1 = new DataGridView();
-            N = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
             button5 = new Button();
-            panel3 = new Panel();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
             panel2 = new Panel();
             label2 = new Label();
             label3 = new Label();
@@ -58,9 +47,21 @@
             button1 = new Button();
             button2 = new Button();
             label1 = new Label();
+            label4 = new Label();
+            N = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
+            dateTimePicker1 = new DateTimePicker();
+            printPreviewControl1 = new PrintPreviewControl();
+            label5 = new Label();
+            label6 = new Label();
+            dateTimePicker2 = new DateTimePicker();
+            button6 = new Button();
+            pictureBox8 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -68,15 +69,23 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             panel1.BackColor = Color.FromArgb(238, 238, 238);
+            panel1.Controls.Add(pictureBox8);
+            panel1.Controls.Add(button6);
+            panel1.Controls.Add(dateTimePicker2);
+            panel1.Controls.Add(label6);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(printPreviewControl1);
+            panel1.Controls.Add(dateTimePicker1);
+            panel1.Controls.Add(label4);
             panel1.Controls.Add(dataGridView1);
             panel1.Controls.Add(button5);
-            panel1.Controls.Add(panel3);
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(label2);
             panel1.Location = new Point(192, 75);
@@ -88,46 +97,11 @@
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { N, Column2, Column3, Column4, Column5 });
-            dataGridView1.Location = new Point(32, 143);
+            dataGridView1.Location = new Point(57, 215);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(689, 83);
             dataGridView1.TabIndex = 20;
-            // 
-            // N
-            // 
-            N.HeaderText = "Column1";
-            N.MinimumWidth = 6;
-            N.Name = "N";
-            N.Width = 125;
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Column2";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.Width = 125;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Column3";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.Width = 125;
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "Column4";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.Width = 125;
-            // 
-            // Column5
-            // 
-            Column5.HeaderText = "Column5";
-            Column5.MinimumWidth = 6;
-            Column5.Name = "Column5";
-            Column5.Width = 125;
             // 
             // button5
             // 
@@ -137,73 +111,6 @@
             button5.TabIndex = 19;
             button5.Text = "Ordenar";
             button5.UseVisualStyleBackColor = true;
-            // 
-            // panel3
-            // 
-            panel3.Controls.Add(label8);
-            panel3.Controls.Add(label7);
-            panel3.Controls.Add(label6);
-            panel3.Controls.Add(label5);
-            panel3.Controls.Add(label4);
-            panel3.Location = new Point(22, 85);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(830, 39);
-            panel3.TabIndex = 18;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            label8.ForeColor = Color.FromArgb(24, 52, 70);
-            label8.Location = new Point(542, 10);
-            label8.Name = "label8";
-            label8.Size = new Size(63, 25);
-            label8.TabIndex = 4;
-            label8.Text = "Zonas";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            label7.ForeColor = Color.FromArgb(24, 52, 70);
-            label7.Location = new Point(188, 10);
-            label7.Name = "label7";
-            label7.Size = new Size(106, 25);
-            label7.TabIndex = 3;
-            label7.Text = "Hora Inicio";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            label6.ForeColor = Color.FromArgb(24, 52, 70);
-            label6.Location = new Point(367, 10);
-            label6.Name = "label6";
-            label6.Size = new Size(99, 25);
-            label6.TabIndex = 2;
-            label6.Text = "Hora Final";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            label5.ForeColor = Color.FromArgb(24, 52, 70);
-            label5.Location = new Point(743, 11);
-            label5.Name = "label5";
-            label5.Size = new Size(70, 25);
-            label5.TabIndex = 1;
-            label5.Text = "Pilotos";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            label4.ForeColor = Color.FromArgb(24, 52, 70);
-            label4.Location = new Point(20, 10);
-            label4.Name = "label4";
-            label4.Size = new Size(87, 25);
-            label4.TabIndex = 0;
-            label4.Text = "No. Ruta";
             // 
             // panel2
             // 
@@ -347,6 +254,112 @@
             label1.Size = new Size(0, 20);
             label1.TabIndex = 20;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(47, 90);
+            label4.Name = "label4";
+            label4.Size = new Size(54, 20);
+            label4.TabIndex = 21;
+            label4.Text = "Estado";
+            // 
+            // N
+            // 
+            N.HeaderText = "";
+            N.MinimumWidth = 6;
+            N.Name = "N";
+            N.Width = 125;
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            Column2.Width = 125;
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            Column5.HeaderText = "";
+            Column5.MinimumWidth = 6;
+            Column5.Name = "Column5";
+            Column5.Width = 125;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(364, 85);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(297, 27);
+            dateTimePicker1.TabIndex = 22;
+            // 
+            // printPreviewControl1
+            // 
+            printPreviewControl1.Location = new Point(788, 421);
+            printPreviewControl1.Name = "printPreviewControl1";
+            printPreviewControl1.Size = new Size(125, 125);
+            printPreviewControl1.TabIndex = 23;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(289, 92);
+            label5.Name = "label5";
+            label5.Size = new Size(51, 20);
+            label5.TabIndex = 24;
+            label5.Text = "Desde";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(293, 127);
+            label6.Name = "label6";
+            label6.Size = new Size(47, 20);
+            label6.TabIndex = 25;
+            label6.Text = "Hasta";
+            label6.Click += label6_Click;
+            // 
+            // dateTimePicker2
+            // 
+            dateTimePicker2.Location = new Point(364, 122);
+            dateTimePicker2.Name = "dateTimePicker2";
+            dateTimePicker2.Size = new Size(297, 27);
+            dateTimePicker2.TabIndex = 26;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.FromArgb(24, 52, 70);
+            button6.ForeColor = Color.White;
+            button6.Location = new Point(682, 155);
+            button6.Name = "button6";
+            button6.Size = new Size(147, 42);
+            button6.TabIndex = 27;
+            button6.Text = "Ver reporte";
+            button6.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.BackColor = Color.FromArgb(24, 52, 70);
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(822, 157);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(36, 36);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 34;
+            pictureBox8.TabStop = false;
+            // 
             // Reportes
             // 
             AllowDrop = true;
@@ -374,8 +387,6 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -383,6 +394,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -391,18 +403,7 @@
 
         private Panel panel1;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn N;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
         private Button button5;
-        private Panel panel3;
-        private Label label8;
-        private Label label7;
-        private Label label6;
-        private Label label5;
-        private Label label4;
         private Panel panel2;
         private Label label2;
         private Label label3;
@@ -418,5 +419,18 @@
         private Button button1;
         private Button button2;
         private Label label1;
+        private Label label4;
+        private DataGridViewTextBoxColumn N;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Column5;
+        private PrintPreviewControl printPreviewControl1;
+        private DateTimePicker dateTimePicker1;
+        private Label label6;
+        private Label label5;
+        private Button button6;
+        private DateTimePicker dateTimePicker2;
+        private PictureBox pictureBox8;
     }
 }
