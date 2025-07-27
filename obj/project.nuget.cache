@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3iNgMjHwjo4=",
+  "dgSpecHash": "7BFutM9p108=",
   "success": true,
-  "projectFilePath": "C:\\Users\\dannus\\Desktop\\UMG\\Ing. Sistemas\\Analisis de Sistemas II\\Proyecto\\sistema\\WinFormsApp1.csproj",
+  "projectFilePath": "C:\\Users\\dannus\\Desktop\\UMG\\Ing. Sistemas\\Analisis de Sistemas II\\Proyecto\\sistema2\\WinFormsApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dannus\\.nuget\\packages\\bouncycastle.cryptography\\2.5.1\\bouncycastle.cryptography.2.5.1.nupkg.sha512",
     "C:\\Users\\dannus\\.nuget\\packages\\google.protobuf\\3.30.0\\google.protobuf.3.30.0.nupkg.sha512",

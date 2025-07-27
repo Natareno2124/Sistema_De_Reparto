@@ -7,8 +7,20 @@
     <Compile Update="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormPiloto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormTransporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pilotos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Sidebar.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Transporte.cs">
+      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
 </Project>
