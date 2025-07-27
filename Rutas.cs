@@ -65,7 +65,16 @@ namespace WinFormsApp1
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-           //pictureBox1.Image = Image.FromFile("C:\\Users\\WINDOWS\\Desktop\\Semestre 2 2025\\ANALISIS DE SISTEMAS 2\\Proyecto 1\\Sistema_De_Reparto\\bin\\Debug\\net8.0-windows\\img.png");
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
 
         }
     }
