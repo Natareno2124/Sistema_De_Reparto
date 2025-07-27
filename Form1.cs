@@ -83,5 +83,11 @@ namespace WinFormsApp1
             Form2 frmUsuarios = new Form2();
             frmUsuarios.Show(); // abre en ventana separada
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Sucursales frmUsuarios = new Sucursales();
+            frmUsuarios.Show(); // abre en ventana separada
+        }
     }
 }
