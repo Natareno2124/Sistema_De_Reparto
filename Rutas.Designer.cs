@@ -28,12 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Rutas));
             label1 = new Label();
             button2 = new Button();
             button1 = new Button();
             button3 = new Button();
             button4 = new Button();
             sidebar1 = new Sidebar();
+            pictureBox1 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox5 = new PictureBox();
+            pictureBox6 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -48,9 +63,10 @@
             // 
             // button2
             // 
-            button2.Location = new Point(789, 509);
+            button2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            button2.Location = new Point(776, 509);
             button2.Name = "button2";
-            button2.Size = new Size(94, 29);
+            button2.Size = new Size(107, 29);
             button2.TabIndex = 2;
             button2.Text = "MODIFICAR";
             button2.UseVisualStyleBackColor = true;
@@ -58,6 +74,7 @@
             // 
             // button1
             // 
+            button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             button1.Location = new Point(676, 509);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
@@ -67,6 +84,7 @@
             // 
             // button3
             // 
+            button3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             button3.Location = new Point(889, 509);
             button3.Name = "button3";
             button3.Size = new Size(94, 29);
@@ -77,6 +95,7 @@
             // 
             // button4
             // 
+            button4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             button4.Location = new Point(999, 510);
             button4.Name = "button4";
             button4.Size = new Size(94, 29);
@@ -93,12 +112,83 @@
             sidebar1.Size = new Size(250, 551);
             sidebar1.TabIndex = 6;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.menu;
+            pictureBox1.Location = new Point(256, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(52, 55);
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.agregar;
+            pictureBox3.Location = new Point(708, 458);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(40, 45);
+            pictureBox3.TabIndex = 9;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(814, 458);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(40, 45);
+            pictureBox2.TabIndex = 10;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(920, 458);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(40, 45);
+            pictureBox4.TabIndex = 11;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resources.agregar;
+            pictureBox5.Location = new Point(1030, 458);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(40, 45);
+            pictureBox5.TabIndex = 12;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(912, 12);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(133, 147);
+            pictureBox6.TabIndex = 13;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = Properties.Resources.agregar;
+            pictureBox7.Location = new Point(1064, 12);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(40, 45);
+            pictureBox7.TabIndex = 14;
+            pictureBox7.TabStop = false;
+            // 
             // Rutas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(141, 153, 174);
             ClientSize = new Size(1116, 551);
+            Controls.Add(pictureBox7);
+            Controls.Add(pictureBox6);
+            Controls.Add(pictureBox5);
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox3);
+            Controls.Add(pictureBox1);
             Controls.Add(sidebar1);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -108,6 +198,13 @@
             Name = "Rutas";
             Text = "Rutas";
             Load += Rutas_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -119,5 +216,12 @@
         private Button button3;
         private Button button4;
         private Sidebar sidebar1;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox7;
     }
 }
