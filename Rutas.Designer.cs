@@ -52,6 +52,12 @@
             label5 = new Label();
             label4 = new Label();
             panel2 = new Panel();
+            dataGridView1 = new DataGridView();
+            N = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -61,6 +67,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -205,6 +212,7 @@
             // 
             panel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             panel1.BackColor = Color.FromArgb(238, 238, 238);
+            panel1.Controls.Add(dataGridView1);
             panel1.Controls.Add(button5);
             panel1.Controls.Add(panel3);
             panel1.Controls.Add(panel2);
@@ -300,6 +308,51 @@
             panel2.Size = new Size(853, 9);
             panel2.TabIndex = 17;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { N, Column2, Column3, Column4, Column5 });
+            dataGridView1.Location = new Point(32, 143);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(689, 83);
+            dataGridView1.TabIndex = 20;
+            // 
+            // N
+            // 
+            N.HeaderText = "Column1";
+            N.MinimumWidth = 6;
+            N.Name = "N";
+            N.Width = 125;
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Column2";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            Column2.Width = 125;
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "Column3";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "Column4";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            Column5.HeaderText = "Column5";
+            Column5.MinimumWidth = 6;
+            Column5.Name = "Column5";
+            Column5.Width = 125;
+            // 
             // Rutas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -334,6 +387,7 @@
             panel1.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -362,5 +416,11 @@
         private Label label5;
         private Label label4;
         private Button button5;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn N;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Column5;
     }
 }

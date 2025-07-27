@@ -150,3 +150,4 @@ C:\Users\WINDOWS\Desktop\Semestre 2 2025\ANALISIS DE SISTEMAS 2\Proyecto 1\Siste
 C:\Users\WINDOWS\Desktop\Semestre 2 2025\ANALISIS DE SISTEMAS 2\Proyecto 1\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
 C:\Users\WINDOWS\Desktop\Semestre 2 2025\ANALISIS DE SISTEMAS 2\Proyecto 1\Sistema_De_Reparto\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
 C:\Users\WINDOWS\Desktop\Semestre 2 2025\ANALISIS DE SISTEMAS 2\Proyecto 1\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.Transporte.resources
+C:\Users\WINDOWS\Desktop\Semestre 2 2025\ANALISIS DE SISTEMAS 2\Proyecto 1\Sistema_De_Reparto\obj\Debug\net8.0-windows\WinFormsApp1.Reportes.resources

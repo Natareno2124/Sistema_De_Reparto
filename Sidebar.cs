@@ -129,7 +129,7 @@ namespace WinFormsApp1
                     ventana = new Pilotos();  
                     break;
                 case "Reportes":
-                    ventana = new Pilotos();   
+                    ventana = new Reportes();   
                     break;
                 case "Transportes":
                     ventana = new Transporte();  
