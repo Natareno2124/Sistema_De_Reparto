@@ -24,5 +24,10 @@ namespace WinFormsApp1
             Clases.CConexion conexion = new Clases.CConexion();
             conexion.establecerConexion();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

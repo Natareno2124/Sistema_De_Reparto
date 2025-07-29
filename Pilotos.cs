@@ -40,7 +40,7 @@ namespace WinFormsApp1
                 DrawMode = DrawMode.OwnerDrawFixed
             };
 
-            cmbRutas.Items.AddRange(new string[] {"Seleccionar Ruta", "Todas las rutas", "Recoleccion", "Entrega" });
+            cmbRutas.Items.AddRange(new string[] { "Seleccionar Ruta", "Todas las rutas", "Recoleccion", "Entrega" });
             cmbRutas.SelectedIndex = 0;
 
             Image[] iconos = new Image[]
@@ -79,7 +79,7 @@ namespace WinFormsApp1
                 Font = new Font("Segoe UI", 9)
             };
 
-            cmbOrdenar.Items.AddRange(new string[] {"Ordenar por: ID", "Ordenar por: Nombre",  "Ordenar por: Fecha", "Ordenar por: Ruta" });
+            cmbOrdenar.Items.AddRange(new string[] { "Ordenar por: ID", "Ordenar por: Nombre", "Ordenar por: Fecha", "Ordenar por: Ruta" });
             cmbOrdenar.SelectedIndex = 0;
             cmbOrdenar.SelectedIndexChanged += (s, e) =>
             {
@@ -115,6 +115,11 @@ namespace WinFormsApp1
             // **IMPORTANTE: agregar a ContentPanel, NO a this.Controls**
             ContentPanel.Controls.Add(panelFiltros);
             ContentPanel.Controls.Add(dgvPilotos);
+
+        }
+
+        private void InitializeComponent()
+        {
 
         }
     }
