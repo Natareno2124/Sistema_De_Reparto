@@ -30,14 +30,30 @@ namespace WinFormsApp1.Clases
         }
 
         // agregar
-        public void InsertarPiloto(string nombres, string apellidos, DateTime fechaNaci, string sexo, string tipoLicencia, int idSucursal)
-        {
-            using (MySqlConnection conn = conexion.establecerConexion())
-            {
+        public void InsertarPiloto(string nombres, string apellidos, DateTime fechaNaci, string sexo, string tipoLicencia, int idSucursal){
+            if (string.IsNullOrWhiteSpace(nombres) || string.IsNullOrWhiteSpace(apellidos))
+                throw new ArgumentException("Nombres y apellidos son obligatorios.");
+
+            if (fechaNaci > DateTime.Now)
+                throw new ArgumentException("La fecha de nacimiento no puede ser en el futuro.");
+
+            if (sexo != "M" && sexo != "F")
+                throw new ArgumentException("Sexo inválido.");
+
+            if (string.IsNullOrWhiteSpace(tipoLicencia))
+                throw new ArgumentException("El tipo de licencia es obligatorio.");
+
+            if (idSucursal <= 0)
+                throw new ArgumentException("Sucursal inválida.");
+
+            using (MySqlConnection conn = conexion.establecerConexion()) {
                 if (conn == null)
                     return;
 
-                string query = "INSERT INTO Conductores (nombres, apellidos, fechaNaci, sexo, tipoLicencia, idSucursal) VALUES (@nombres, @apellidos, @fechaNaci, @sexo, @tipoLicencia, @idSucursal)";
+                string query = @"INSERT INTO Conductores 
+            (nombres, apellidos, fechaNaci, sexo, tipoLicencia, idSucursal) 
+            VALUES (@nombres, @apellidos, @fechaNaci, @sexo, @tipoLicencia, @idSucursal)";
+
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@nombres", nombres);
@@ -50,8 +66,6 @@ namespace WinFormsApp1.Clases
                 }
             }
         }
-
-
 
 
         // modificar
